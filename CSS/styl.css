@@ -1,3 +1,10 @@
 body{
   background-color:gray;
 }
+#blok{
+  text-align:center;
+  margin:auto;
+  background-color:pink;
+  width:50%;
+  border:2px solid black;
+  }
