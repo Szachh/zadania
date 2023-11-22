@@ -6,55 +6,6 @@
     <title>Moja strona</title>
     <link rel="stylesheet" href="CSS/styl.css">
 </head>
-    <script>
-        var data=new Date;
-var miesiac=data.getMonth();
-var dzien=data.getDate();
-var godzina=data.getHours();
-var minuta=data.getMinutes();
-var sekunda=data.getSeconds();
-
-switch(miesiac){
-  case 8:
-    var ile_dni=(30+31+30+31+172)-dzien;
-   break;
-   case 9:
-    var ile_dni=(31+30+31+172)-dzien;
-   break;
-   case 10:
-    var ile_dni=(30+31+172)-dzien;
-   break;
-   case 11:
-    var ile_dni=(31+172)-dzien;
-   break;
-   case 0:
-    var ile_dni=172-dzien;
-   break;
-   case 1:
-    var ile_dni=(172-31)-dzien;
-   break;
-   case 2:
-    var ile_dni=(172-31-29)-dzien;
-   break;
-   case 3:
-    var ile_dni=(172-31-29-31)-dzien;
-   break;
-   case 4:
-    var ile_dni=(172-31-29-31-30)-dzien;
-   break;
-   case 5:
-    var ile_dni=(172-31-29-31-30-31)-dzien;
-   break;
-}
-var ile_godzin=(ile_dni*24)-godzina+11;
-var ile_minut=((ile_dni*1440)+11*1440)-godzina*1440-minuta;
-var ile_sekund=((ile_dni*86400)+11*86400)-godzina*86400-minuta*60-sekunda;
-
-document.querySelector("#blok1").innerHTML=ile_dni;
-document.querySelector("#blok2").innerHTML=ile_godzin;
-document.querySelector("#blok3").innerHTML=ile_minut;
-document.querySelector("#blok4").innerHTML=ile_sekund;
-    </script>
 <body>
   <div id="blok">
     <h5>Koniec roku szkolnego 2023/2024</h5>
